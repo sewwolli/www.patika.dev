@@ -1,0 +1,34 @@
++ 1) [22,27,16,2,18,6] -> Insertion Sort
++
++ yukarıdaki veriyi sort türlerine göre yazınız.
++ - min=2 -> swap 2 and 22 -> [ 2, | 27,16,22,18,6]
++ - min=6 -> swap 6 and 27 -> [2,6, | 16,22,18,27]
++ - min=16 -> no need to swap -> [2,6,16, | 22,18,27]
++ - min=18 -> swap 18 to 22 -> [2,6,16,18, | 22,27]
++
++ 2)Big-O gösterimini yazınız.
++ Step 1 -> n
++ Step 2 -> n-1
++ Step 3 -> n-2
++ ...
++ Step n-1 -> 1
++
++ sum= (n*(n-1))/2 -> O (n^2)
++ 
++ Time Complexity : Average case: aradığımız sayının ortada olması.
++ Worst case: aradığımız sayının sonda olması 
++ Best case: aradığımız sayının diznin en başında olması 
++
++ 3) Dizi sıralandıktan sonra 18 hangi case kapsamına girer?
++ Worst case: karşılacabileceğimiz en kötü senaryo
++
++ 4) [7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
++
++ - min= 2 -> swap 2 to 7 -> [2, | 3,5,8,7,9,4,15,6]
++ - min= 3 -> no need swap -> [2,3, | 5,8,7,9,4,15,6]
++ - min= 4 -> swap 5 to 4 -> [ 2,3,4, | 8,7,9,5,15,6]
++ - min=5 -> swap 5 to 8 -> [ 2,3,4,5, | 7,9,8,15,6]
++ - min=6 -> swap 7 to 6 -> [ 2,3,4,5,6, | 9,8,15,7]
++ - min=7 -> swap 7 to 9 -> [ 2,3,4,5,6,7, | 8,15,9]
++ - min=8 -> no need swap -> [ 2,3,4,5,6,7,8, | 15,9]
++ - min=9 -> swap 9 to 15 -> [ 2,3,4,5,6,7,8,9,15]
